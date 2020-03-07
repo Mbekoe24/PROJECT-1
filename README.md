@@ -15,8 +15,8 @@ Pokémon Api (https://pokeapi.co/)
 Goal : I will have all my data recieved from API implemented into my code.  
 Goal : Finished configuring all my JS logic for my game.  
 Goal : Have my page layout for Desktop fully set.
-Goal : Have my app up on surge.
 Goal : Have media quieries (moble, and tablets) built / design within code.
+Goal : Have my app up on surge.
 
 # Post-MVP:
 
