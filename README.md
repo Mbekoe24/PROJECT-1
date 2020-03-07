@@ -6,7 +6,7 @@ Title: Poke App: Knowledge Tester
 
 I will be using get a picture of a Pokemon from api data to display on the screen. I will be using the math.random() / other methods to display that randomize pokemon that will display on the screen. The user will than have 3 answer to choose from that will confirm the pokemon displayed on the screen. If the user get 5 correct answer, he will be crowned the new Pokemon Master. I will include a hamburger/dropmenu where user can access and look at all different pokemon. This menu will include their names and types from a (list: name, type of Pokemon).
 
-# API: Which API you will be using.
+# API:
 
 Pokémon Api (https://pokeapi.co/)
 
