@@ -26,3 +26,7 @@ Goal : Will have a UX student take a look at app.
 Goal : I will find a local storage where I can save data.
 Goal : Reference & credit all links/ img within my code.
 Goal : I will have a favicon inplace
+
+# Wireframe :
+
+(pokemon-HP-WF)[pokemon-HP-WF.png](pokemon-Game-WF)[pokemon-game-wf.png],
