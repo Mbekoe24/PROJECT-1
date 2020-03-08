@@ -1,0 +1,69 @@
+body {
+  background: linear-gradient(to right, #92fe9d, #00c9ff);
+}
+/*Pokemon head */
+
+.div-head {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#poke-logo {
+  width: 150px;
+  height: 50px;
+  padding: 10px 0px;
+  margin-top: 15px;
+}
+
+/* Front-pg - Images  */
+
+.prof-img {
+  height: 320px;
+  width: 320px;
+}
+.welcome-img {
+  margin-left: 25%;
+  margin-bottom: 70px;
+  width: 600px;
+  height: 72px;
+  border:5px solid #ffcc03;
+  padding: 10px 10px;
+border-radius: 5px;
+}
+.greeting-img {
+  width: 270px;
+  height: 250px;
+  margin-bottom: 50px;
+}
+.intro-img {
+  width: 600px;
+  height: 150px;
+  margin-top: 200px;
+  margin-left: 40px;
+}
+.button-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+div button {
+  background-color: transparent;
+  width: 120px;
+  height: 60px;
+  font-size: 0.75em;
+  border: 2px solid #92fe9d;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffcc03;
+  font-size: large;
+  font-family: "Russo One", sans-serif;
+}
+
+div button:hover {
+  background-color: #92fe9d;
+  color: white;
+  cursor: pointer;
+}

@@ -14,14 +14,15 @@ Pokémon Api (https://pokeapi.co/)
 
 Goal : I will have all my data recieved from API implemented into my code.  
 Goal : Finished configuring all my JS logic for my game.  
-Goal : Have my page layout for Desktop fully set.
-Goal : Have media quieries (moble, and tablets) built / design within code.
-Goal : Have my app up on surge.
+Goal : My page layout for Desktop fully set.
+Goal : My media quieries (mobile, and tablets) built / design within code.
+Goal : My website will be up on surge.
 
 # Post-MVP:
 
 Goal : Will have event listeners built for all buttons on page and options.  
 Goal : To have CSS slide animations into next page/ linear gradient backgrounds/ flex or grid to align picture.
 Goal : Will have a UX student take a look at app.
-Goal : I will be looking into local storage where I can save data within the user browser.
+Goal : I will find a local storage where I can save data.
 Goal : Reference & credit all links/ img within my code.
+Goal : I will have a favicon inplace
