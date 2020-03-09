@@ -23,12 +23,14 @@ div img {
   /* justify-content: center; */
   width: 200px;
   height: 200px;
-  margin-right: 100px;
-}
-/* #pokemon-img {
-  filter: brightness(0);
 
-} */
+  margin-right: 50px;
+}
+#pokemon-img {
+  /* border: 5px solid white;
+  background: white; */
+  /* filter: brightness(0); */
+}
 .name {
   color: #ffcc03;
   font-size: 2em;

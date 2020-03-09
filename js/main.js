@@ -6,7 +6,7 @@
 const pokeData = {
   url: "https://pokeapi.co/api/v2/",
   type: "pokemon",
-  id: "89"
+  id: "54"
 };
 
 const { url, type, id } = pokeData;
@@ -21,8 +21,7 @@ const pokeImg = document.querySelector("#pokemon-img");
 
 const getPokemon = async () => {
   const response = await axios.get(pokeUrl);
-
-  console.log(response.data.id);
+  // console.log(response.data.id);
 };
 
 getPokemon();
@@ -32,7 +31,6 @@ getPokemon();
 // //=======================
 
 //
-
 const pokeHTML = async () => {
   const response = await axios.get(pokeUrl);
   const innerHTML = `
@@ -47,16 +45,15 @@ pokeHTML();
 
 const pokeList = async () => {
   const response = await axios.get(pokeUrl);
-  currentIndex = response.data.id;
-  // console.log(response.data);
+  let currentIndex = pokeData[id['']];
   newIndex = [];
-  if (i = 0; i < currentIndex.length; i++)
-  {
-   Math.floor(Math.random()) * currentIndex + 1;
+  for (i = 0; i < currentIndex; i++) {
+    Math.floor(Math.random()) * currentIndex.parsInt().toString + 1;
   }
- 
-  }
-  return newIndex;
+  console.log(newIndex);
+  // console.log(response.data);
+};
+
 pokeList();
 
 // buildQuestion = () => {};
