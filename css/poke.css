@@ -8,6 +8,7 @@ body {
   height: 100px;
   width: 100%;
   justify-content: flex-start;
+  padding-bottom: 50px;
 }
 
 #poke-logo {
@@ -17,37 +18,23 @@ body {
   margin-top: 15px;
 }
 
-/* Front-pg - Images  */
-
-.prof-img {
-  height: 320px;
-  width: 320px;
-}
-.welcome-img {
-  margin-left: 25%;
-  margin-bottom: 70px;
-  width: 600px;
-  height: 72px;
-  /* border:5px solid #ffcc03; */
-  padding: 10px 10px;
-  border-radius: 5px;
-}
-.greeting-img {
-  width: 270px;
-  height: 250px;
-  margin-bottom: 50px;
-}
-.intro-img {
-  width: 600px;
-  height: 150px;
-  margin-top: 200px;
-  margin-left: 40px;
-}
-.button-div {
+div img {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 50px;
+  /* justify-content: center; */
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
 }
+/* #pokemon-img {
+  filter: brightness(0);
+
+} */
+.name {
+  color: #ffcc03;
+  font-size: 2em;
+  font-family: "Russo One", sans-serif;
+}
+
 div button {
   background-color: transparent;
   width: 120px;
@@ -60,6 +47,8 @@ div button {
   color: #ffcc03;
   font-size: large;
   font-family: "Russo One", sans-serif;
+  display: flex;
+  justify-content: baseline;
 }
 
 div button:hover {
@@ -67,17 +56,7 @@ div button:hover {
   color: white;
   cursor: pointer;
 }
-
-/* Game page styles  */
-
-#pokemon-img {
+section {
   display: flex;
   justify-content: center;
-}
-
-
-.name {
-  color: #ffcc03;
-  font-size: 2em;
-  font-family: "Russo One", sans-serif;
 }

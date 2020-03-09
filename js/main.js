@@ -2,55 +2,75 @@
 //=====================================
 //=========== global variables ==========
 //=====================================
-Api for the game
-  
-Bulbasaur - "https://pokeapi.co/api/v2/pokemon-form/1/";
 
-charmander - "https://pokeapi.co/api/v2/pokemon-form/4/";
-squirtle - "https://pokeapi.co/api/v2/pokemon-form/7/";
+const pokeData = {
+  url: "https://pokeapi.co/api/v2/",
+  type: "pokemon",
+  id: "89"
+};
 
-Mewtwo - "https://pokeapi.co/api/v2/pokemon-form/150/";
+const { url, type, id } = pokeData;
+const pokeUrl = `${url}${type}/${id}`;
 
-blaziken - "https://pokeapi.co/api/v2/pokemon-form/257/";
-
-rayquaza - "https://pokeapi.co/api/v2/pokemon-species/384/";
-
-
-
-// const api_key = { "x-api-key": "143c3a90-4456-449c-8dca-928380947fe4" };
-// const button = document.querySelector("#try-me");
-// const select = document.querySelector("select");
-
+// console.log(pokeUrl);
 // // =======================
 // /// === Pokemon ======
 // //========================
-// const getCategories = async () => {
-//   const resp = await axios.get(
-//     "https://api.thecatapi.com/v1/categories",
-//     api_key
-//   );
+//
+const pokeImg = document.querySelector("#pokemon-img");
 
-//   resp.data.forEach(category => {
-//     select.innerHTML += `
-//   <option value = ${category.id}>${category.name}</option>
-//     `;
-//   });
-// };
-// getCategories();
+const getPokemon = async () => {
+  const response = await axios.get(pokeUrl);
+
+  console.log(response.data.id);
+};
+
+getPokemon();
 
 // //=======================
 // //== image get request
 // //=======================
 
-// //https://api.thecatapi.com/v1/images/search?category_ids=${categoryId}
+//
 
-// button.addEventListener("click", async () => {
-//   const resp = await axios.get(
-//     `https://api.thecatapi.com/v1/images/search?category_ids=${select.value}`,
-//     api_key
-//   );
-//   // debugger;
-//   const catPicDiv = document.querySelector("#catpic");
-//   catPicDiv.innerHTML = `
-//   <img src=${resp.data[0].url} />`;
-// });
+const pokeHTML = async () => {
+  const response = await axios.get(pokeUrl);
+  const innerHTML = `
+  <img src= ${response.data.sprites.front_default}>
+  <div class="name">${response.data.name}</div>
+  `;
+  const pokeInfo = document.querySelector("#pokemon-img");
+  pokeInfo.innerHTML = innerHTML;
+};
+
+pokeHTML();
+
+const pokeList = async () => {
+  const response = await axios.get(pokeUrl);
+  currentIndex = response.data.id;
+  // console.log(response.data);
+  newIndex = [];
+  if (i = 0; i < currentIndex.length; i++)
+  {
+   Math.floor(Math.random()) * currentIndex + 1;
+  }
+ 
+  }
+  return newIndex;
+pokeList();
+
+// buildQuestion = () => {};
+
+// let pokemonArr = pokeData(id);
+
+// const pokemonRandomizer = pokemonArr => {
+//   for (let i = 0; i < pokemonArr[id].length; i++) {
+//     Math.floor(Math.random()) * pokemonArr.length;
+//   }
+//   return pokemonArr;
+// };
+// pokemonRandomizer();
+
+// for (let i = 0; i < response.data.id.length; i++) {
+//   Math.floor(Math.random()) * response.data.id.length;
+// }
