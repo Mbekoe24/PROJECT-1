@@ -31,4 +31,4 @@ Goal : I will have a favicon inplace
 
 (pokemon-HP-WF)[pokemon-HP-WF.png](pokemon-Game-WF)[pokemon-game-wf.png],
 
-!(imageAlt)(https://imgur.com/AlLc1Pq)
+!(imageAlt)(https://res.cloudinary.com/dzwjxdnjs/image/upload/v1583717386/Pokemon-HP-WF_sbdwkg.png)
