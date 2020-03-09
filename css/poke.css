@@ -1,5 +1,7 @@
 body {
   background: linear-gradient(to right, #92fe9d, #00c9ff);
+  height: 100vh;
+  width: 100%;
 }
 /*Pokemon head */
 
@@ -29,14 +31,23 @@ div img {
 #pokemon-img {
   /* border: 5px solid white;
   background: white; */
-  /* filter: brightness(0); */
+  filter: brightness(0);
+}
+
+#whos-that {
+  margin-left: 500px;
+  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .name {
   color: #ffcc03;
   font-size: 2em;
   font-family: "Russo One", sans-serif;
 }
+.button-div{
+padding-top: 20px;
 
+}
 div button {
   background-color: transparent;
   width: 120px;
@@ -50,7 +61,6 @@ div button {
   font-size: large;
   font-family: "Russo One", sans-serif;
   display: flex;
-  justify-content: baseline;
 }
 
 div button:hover {
