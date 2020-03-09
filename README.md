@@ -28,6 +28,3 @@ Goal : Reference & credit all links/ img within my code.
 Goal : I will have a favicon inplace
 
 # Wireframe :
-![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1583717722/Pokemon-HP-WF_sn8mbr.png)
-![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1583717615/Pokemon-Game-WF_h1k8pm.png)
-
