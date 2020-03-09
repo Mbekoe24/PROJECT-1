@@ -32,3 +32,4 @@ Goal : I will have a favicon inplace
 (pokemon-HP-WF)[pokemon-HP-WF.png](pokemon-Game-WF)[pokemon-game-wf.png],
 ![alt text](http://url/to/pokemon-HP-WF.png)
 ![alt text](pokemon-HP-WF.png)
+!(imageAlt)(pokemon-HP-WF.png)
