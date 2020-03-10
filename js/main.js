@@ -2,7 +2,9 @@
 //=====================================
 //=========== global variables ==========
 //=====================================
-// document.querySelector("#click-here").addEventListener("click", url("poke.html"))
+document.querySelector("#click-here").addEventListener("click", () =>{
+url
+})
 
 let randomNum = Math.floor(Math.random() * 807);
 // console.log(randomNum);
@@ -39,8 +41,8 @@ const pokeHTML = async () => {
   `;
   const pokeInfo = document.querySelector("#pokemon-img");
   pokeInfo.innerHTML = innerHTML;
-  const pokeButton = document.querySelector("button");
-  pokeButton.innerHTML = innerHTML2;
+  const pokeButton = document.querySelector(".answer1");
+  pokeButton.innerText = response.data.name;
 };
 
 pokeHTML();
@@ -78,3 +80,44 @@ const randomNames3 = async () => {
 };
 randomNames3();
 
+// Randomizing each button within the array/
+
+const randomizeButton = () => {
+  let buttonArr = document.querySelectorAll(".answer-button");
+  const answerContainer = document.querySelector(".button-div");
+  for (let i = buttonArr.length; i > 0; i -= 1) {
+    answerContainer.appendChild(
+      buttonArr[Math.floor(Math.random() * buttonArr.length)]
+    );
+  }
+};
+
+randomizeButton();
+
+// Logic for the correct answer === userInput
+
+const findAnswer = () => {
+  const answerArr = document.querySelectorAll(".answer-button");
+  const correctAns = document.querySelector(".answer1");
+  let userScore = 0;
+  let revealPic = (document.querySelector("#pokemon-img").style.property =
+    "brightness= 100%");
+  const userInput = answerArr.addEventListner("click", event => {
+    console.log(event.target.value);
+  });
+  if (userInput === correctAns) {
+    userScore += 1;
+    revealPic;
+    alert(`You got it! You have ${userScore} now. `);
+  } else if (userInput != correctAns) {
+    alert("Sorry, that was incorrect");
+    revealPic;
+  }
+  if (userScore === 8 && 10) {
+    alert(" You, Win! Go back to the Home Page and Try Again!");
+    revealPic;
+  } else {
+    alert("You've lost the game, you're not a Pokemon Master.");
+    revealPic;
+  }
+};
