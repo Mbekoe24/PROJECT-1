@@ -24,15 +24,13 @@ body {
 
 div img {
   display: flex;
-  /* justify-content: center; */
   width: 400px;
   height: 400px;
 
   margin-right: 50px;
 }
+/* Images on all html pages  */
 #pokemon-img {
-  /* border: 5px solid white;
-  background: white; */
   filter: brightness(0);
 }
 
@@ -41,7 +39,7 @@ div img {
   padding-bottom: 30px;
   padding-bottom: 10px;
 }
-
+/* button styling */
 .button-div {
   padding-top: 20px;
 }
@@ -84,3 +82,15 @@ section {
   display: flex;
   justify-content: center;
 }
+#score-button {
+  background-color: #ffcc03;
+  text-align: center;
+  margin-left: 20px;
+  width: 150px;
+  height: 100px;
+}
+/* 
+.poke-ball {
+  width: 100px;
+  height: 100px;
+} */
