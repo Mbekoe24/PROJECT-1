@@ -140,21 +140,21 @@ section {
   }
 
   #poke-ball {
-  display: flex;
-margin-right:110px;
-  width: 90%;
-  height: 90%;
-  /* margin-left: 100px; */
-}
-/* #whos-that {
+    display: flex;
+    margin-right: 110px;
+    width: 90%;
+    height: 90%;
+    /* margin-left: 100px; */
+  }
+  /* #whos-that {
   margin-left: 300px;
   padding-bottom: 10px;
   width: 40%;
   height: 20%;
 } */
-.div-head{
-  padding-bottom: 20px;
-}
+  .div-head {
+    padding-bottom: 20px;
+  }
   div img {
     width: 150px;
     height: 150px;
@@ -172,5 +172,26 @@ margin-right:110px;
     font-size: 1.5em;
 
     height: 90px;
+  }
+}
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  #whos-that {
+    margin-left: 100px;
+  }
+  #poke-ball {
+    margin-right: 0px;
+  }
+
+  #whos-that {
+    width: 70%;
+  }
+
+  section {
+    margin-right: 0px;
+  }
+
+  div button {
+    font-size: 1.5em;
   }
 }

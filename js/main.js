@@ -96,7 +96,7 @@ const userInput = () => {
         randomNames2();
         randomNames3();
         randomizeButton();
-      }, 1000);
+      }, 2000);
     });
   }
 };
