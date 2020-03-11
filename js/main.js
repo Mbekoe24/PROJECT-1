@@ -13,7 +13,7 @@ const makeRandomPoke = () => {
   return pokeUrl;
 };
 let pokeUrl = makeRandomPoke();
-const pokeImg = document.querySelector("#pokemon-img");
+const pokeImg = document.querySelector("#pokemon");
 
 // //=======================
 // //== image/ name get request
@@ -21,22 +21,30 @@ const pokeImg = document.querySelector("#pokemon-img");
 
 const pokeHTML = async () => {
   const response = await axios.get(makeRandomPoke());
-  const pokeInfo = document.querySelector("#pokemon-img img");
+  const pokeInfo = document.querySelector("#pokemon img");
   pokeInfo.src = response.data.sprites.front_default;
-  document.querySelector("#pokemon-img").classList.remove("pokeball");
+  document.querySelector("#pokemon").classList.remove("pokeball");
   const pokeButton = document.querySelector(".answer1");
   pokeButton.innerText = response.data.name;
   pokeImg.classList.remove("reveal");
-  const youLose = document.querySelector(".you-lose");
+  const whosThat = document.querySelector("#whos-that");
+  const imageDiv = document.querySelector("#image-div");
+  const youWin = document.createElement("div");
+  const youLose = document.createElement("div");
   const gamePlay = document.querySelector("#gameplay");
-
-  if (questionsAsked > 9) {
+  /// Question Counter / Score
+  if (score > 9) {
+    whosThat.classList.add("hide-div");
     gamePlay.classList.add("hide-div");
-  } else if (score > 8) {
+    youWin.innerHTML = `<img src="https://fontmeme.com/permalink/200311/d2e844f6b46c41662ce217d0b9cac65a.png"/>`;
+    imageDiv.appendChild(youWin);
     console.log("You win");
     // change markup to display the users score and an end game message.
-  } else if (score > 8) {
-    youLose.innerHTML = `<img src="https://fontmeme.com/permalink/200311/fb62d2f4c2a974bf3d2c55acc8ba143d.png"/>`;
+  } else if (questionsAsked > 9 && score < 8) {
+    whosThat.classList.add("hide-div");
+    gamePlay.classList.add("hide-div");
+    youLose.innerHTML = `<img src="https://fontmeme.com/permalink/200311/951aaed79f4e541865a5982786e17319.png"/>`;
+    imageDiv.appendChild(youLose);
     console.log("You Lose");
   }
 };
@@ -88,7 +96,7 @@ const userInput = () => {
         randomNames2();
         randomNames3();
         randomizeButton();
-      }, 3000);
+      }, 1000);
     });
   }
 };
@@ -103,6 +111,7 @@ let questionsAsked = 0;
 const findAnswer = e => {
   const answerValue = correctAns.innerHTML;
   questionsAsked += 1;
+  console.log(questionsAsked);
   if (e.target.innerHTML === answerValue) {
     pokeImg.classList.add("reveal");
     scoreBoard.innerHTML = `${(score += 1)}`;

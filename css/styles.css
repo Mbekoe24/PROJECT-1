@@ -6,7 +6,7 @@ body {
 }
 
 #main {
-  min-height: 90vh;
+  min-height: 100vh;
 }
 /*Pokemon head */
 
@@ -92,7 +92,7 @@ div button:hover {
 footer {
   background-color: #ffcc03;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
 }
 .rules {
   width: 150px;
