@@ -87,8 +87,7 @@ div button:hover {
   font-family: "Russo One", sans-serif;
 }
 
-/* 
-footer styling  */
+/* footer styling //////////////////////////////////*/
 
 footer {
   background-color: #ffcc03;
@@ -125,30 +124,39 @@ footer {
     display: flex;
     width: 70%;
     align-items: center;
+    margin-left: 10px;
     flex-direction: column;
     min-height: 90vh;
   }
   #poke-logo {
-    width: 80%;
-    margin-left: 10px;
+    width: 70%;
+    margin-left: 30px;
+    margin-bottom: 10px;
   }
+  .prof-img {
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  .welcome-img {
+    width: 75vw;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
   .greeting-img {
     padding-top: 20px;
     margin-left: 30px;
     width: 90%;
     height: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
-  .welcome-img {
-    width: 130%;
-    margin: 0;
-  }
-
   .intro-img {
-    width: 140%;
-    height: 140px;
-    margin-top: 30px;
-    margin-left: 60px;
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    margin-right: 50px;
     padding-bottom: 15px;
     padding-left: 50px;
   }
@@ -156,51 +164,79 @@ footer {
   footer {
     background-color: #ffcc03;
     text-align: center;
+    width: 97.2%;
     padding: 5px;
   }
   #click-here {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     margin-bottom: 10px;
   }
   div button {
-    margin-left: 100px;
-    background-color: transparent;
-    width: 120px;
-    height: 60px;
-    font-size: 0.75em;
-    border: 2px solid #92fe9d;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #ffcc03;
-    font-size: large;
-    font-family: "Russo One", sans-serif;
+    margin-left: 50px;
   }
 
   .rules {
     width: 50%;
     height: 30%;
-    padding-bottom: 15px;
-    margin-right: 20px;
-  }
-  .rules-div {
-    display: flex;
-    justify-content: center;
+    padding-bottom: 20px;
+    margin-right: 10px;
   }
 
   .rules-prompt {
-    width: 100%;
+    width: 95%;
     height: 100%;
-    padding-bottom: 20px;
+    margin-left: 30px;
+    padding-bottom: 10px;
   }
   .prompt-div {
-    display: flex;
-    justify-content: center;
     padding-bottom: 10px;
   }
   #play-div {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  body {
+    height: 100vh;
+  }
+  #main{
+    min-height: 100vh;
+  }
+  #poke-logo {
+    width: 70%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  footer {
+    width: 99%;
+    height: 10px;
+  }
+
+  .prof-img {
+    height: 400px;
+    width: 400px;
+  }
+  /* This is belongs to https://revaryk.wordpress.com/2017/01/12/why-professor-kukui-is-awesome/ */
+  .welcome-img {
+    margin-left: 25%;
+    margin-bottom: 70px;
+    width: 50%;
+    height: 72px;
+  }
+  .greeting-img {
+    width: 300px;
+    /* margin-bottom: 50px; */
+  }
+  .intro-img {
+    width: 600px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+  }
+  .button-div {
     display: flex;
     justify-content: center;
-    margin-right: 100px;
+    margin-left: 30%;
   }
 }

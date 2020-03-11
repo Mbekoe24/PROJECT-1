@@ -30,7 +30,6 @@ div img {
   display: flex;
   width: 400px;
   height: 400px;
-
   margin-right: 50px;
 }
 /* Images on all html pages  */
@@ -40,7 +39,6 @@ div img {
 
 #whos-that {
   margin-left: 500px;
-  padding-bottom: 30px;
   padding-bottom: 10px;
 }
 /* button styling */
@@ -109,4 +107,37 @@ section {
 
 .pokeball {
   filter: brightness(100%);
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  #poke-logo {
+    width: 150px;
+    height: 50px;
+    padding: 10px 10px;
+    margin-top: 15px;
+  }
+  #whos-that {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+  }
+  div img {
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+  }
+  div button {
+ 
+    width: 109px;
+    height: 100px;
+    font-size: 0.85em;
+  }
+
+  .score-container {
+    margin-left: 20px;
+    width: 100px;
+    font-size: 1.5em;
+
+    height: 90px;
+  }
 }
