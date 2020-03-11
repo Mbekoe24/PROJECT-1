@@ -27,11 +27,17 @@ const pokeHTML = async () => {
   const pokeButton = document.querySelector(".answer1");
   pokeButton.innerText = response.data.name;
   pokeImg.classList.remove("reveal");
+  const youLose = document.querySelector(".you-lose");
+  const gamePlay = document.querySelector("#gameplay");
 
-  if (questionsAsked <= 10) {
-    // Keep rendering new pokehtml
-  } else {
+  if (questionsAsked > 9) {
+    gamePlay.classList.add("hide-div");
+  } else if (score > 8) {
+    console.log("You win");
     // change markup to display the users score and an end game message.
+  } else if (score > 8) {
+    youLose.innerHTML = `<img src="https://fontmeme.com/permalink/200311/fb62d2f4c2a974bf3d2c55acc8ba143d.png"/>`;
+    console.log("You Lose");
   }
 };
 pokeHTML();
@@ -93,19 +99,6 @@ const correctAns = document.querySelector(".answer1");
 const scoreBoard = document.querySelector("#score-button");
 let score = 0;
 let questionsAsked = 0;
-
-// const findAnswer = e => {
-//   const pokeImg = document.querySelector("#pokemon-img");
-//   for (let i = 0; i < scoreBoard.innerHTML; i++) {
-//     if (userInput(e) === correctAns) {
-//       pokeImg.classList.add("reveal");
-//       return score;
-//     } else if (userInput(e) !== correctAns) {
-//       pokeImg.classList.remove("reveal");
-//       return score;
-//     }
-//   }
-// };
 
 const findAnswer = e => {
   const answerValue = correctAns.innerHTML;

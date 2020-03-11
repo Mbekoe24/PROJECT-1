@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+.hide-div {
+  display: none;
+}
+
 /*Pokemon head */
 
 .div-head {
@@ -85,14 +89,20 @@ section {
 .score-container {
   background-color: #ffcc03;
   text-align: center;
+  font-family: "Russo One", sans-serif;
   margin-left: 20px;
   width: 100px;
+  font-size: 28.8px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
   height: 100px;
 }
-
-/* #poke-ball {
-  filter: brightness(100%);
-} */
+.score-container:hover {
+  background-color: #00c9ff;
+  color: white;
+  cursor: pointer;
+}
 .reveal {
   filter: brightness(100%);
 }
