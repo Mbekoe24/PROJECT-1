@@ -30,7 +30,7 @@ div img {
   margin-right: 50px;
 }
 /* Images on all html pages  */
-#pokemon-img {
+.pokemon-img {
   filter: brightness(0);
 }
 
@@ -82,15 +82,21 @@ section {
   display: flex;
   justify-content: center;
 }
-#score-button {
+.score-container {
   background-color: #ffcc03;
   text-align: center;
   margin-left: 20px;
-  width: 150px;
-  height: 100px;
-}
-/* 
-.poke-ball {
   width: 100px;
   height: 100px;
+}
+
+/* #poke-ball {
+  filter: brightness(100%);
 } */
+.reveal {
+  filter: brightness(100%);
+}
+
+.pokeball {
+  filter: brightness(100%);
+}

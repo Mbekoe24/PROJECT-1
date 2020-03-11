@@ -24,8 +24,8 @@
   <img id="whos-that" src="https://fontmeme.com/permalink/200308/06154ea374a78950bfda2f5f912ac60d.png"
     alt="Who's that Pokémon?">
   <section>
-    <div id="pokemon-img">
-      <img class="poke-ball" src="images/pokeball_PNG8.png" />
+    <div id="pokemon-img" class="pokemon-img pokeball">
+      <img id="poke-ball" src="images/pokeball_PNG8.png" />
     </div>
     <!-- <div id="pokemon-text"></div> -->
 
@@ -37,11 +37,11 @@
     </div>
   </section>
 
-  <div class="score-div">
-    <button id=score-button>
-      "0"
-    </button>
-
+  <div class="score-container">
+    <p>Score</p>
+    <p id="score-button">
+      0
+    </p>
   </div>
 
   <script src="js/main.js"></script>

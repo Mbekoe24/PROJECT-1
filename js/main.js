@@ -23,8 +23,16 @@ const pokeHTML = async () => {
   const response = await axios.get(makeRandomPoke());
   const pokeInfo = document.querySelector("#pokemon-img img");
   pokeInfo.src = response.data.sprites.front_default;
+  document.querySelector("#pokemon-img").classList.remove("pokeball");
   const pokeButton = document.querySelector(".answer1");
   pokeButton.innerText = response.data.name;
+  pokeImg.classList.remove("reveal");
+
+  if (questionsAsked <= 10) {
+    // Keep rendering new pokehtml
+  } else {
+    // change markup to display the users score and an end game message.
+  }
 };
 pokeHTML();
 /// second instance of random name
@@ -59,77 +67,53 @@ const randomizeButton = () => {
   }
 };
 
-randomizeButton();
+// randomizeButton();
 
 // Logic for the correct answer === userInput
 
-let correctAns = document.querySelector(".answer1");
 let clickPokemon = document.querySelectorAll(".answer-button");
-let scoreBoard = document.querySelector("score-button");
-let revealPic = (document.querySelector("#pokemon-img").style.brightness =
-  "100%");
-tempScore = scoreBoard;
-let userScore = 0;
-let tempScore;
-for (let i = 0; i < clickPokemon.length; i++) {
-  clickPokemon[i].addEventListener("click", () => {
-    pokeHTML();
-    randomNames2();
-    randomNames3();
-    randomizeButton();
-    revealPic;
-    tempScore = userScore.parsInt()++;
-    if (clickPokemon[i] === correctAns) {
-      userScore++;
 
-      // alert(
-      //   `You got it right, you gotten  ${userScore} question right so far!`
-      // );
-    } else {
-      alert("Wrong answer!");
-    }
-    // setTimeout(() => {
+const userInput = () => {
+  for (let i = 0; i < clickPokemon.length; i++) {
+    clickPokemon[i].addEventListener("click", e => {
+      findAnswer(e);
+      setTimeout(() => {
+        pokeHTML();
+        randomNames2();
+        randomNames3();
+        randomizeButton();
+      }, 3000);
+    });
+  }
+};
 
-    // }, 1000);
-    // checkForWinner();
-  });
-}
-// const findAnswer = () => {
-//   const answerArr = document.querySelectorAll(".answer-button");
-//   const correctAns = document.querySelector(".answer1");
-//   let revealPic = (document.querySelector("#pokemon-img").style.property =
-//     "brightness= 100%");
-//   if (answerArr.length === correctAns) {
-//     alert(`You got it! Well done. `);
-//     revealPic;
-//   } else {
-//     alert("Sorry, that was incorrect");
-//     revealPic;
+userInput();
+
+const correctAns = document.querySelector(".answer1");
+const scoreBoard = document.querySelector("#score-button");
+let score = 0;
+let questionsAsked = 0;
+
+// const findAnswer = e => {
+//   const pokeImg = document.querySelector("#pokemon-img");
+//   for (let i = 0; i < scoreBoard.innerHTML; i++) {
+//     if (userInput(e) === correctAns) {
+//       pokeImg.classList.add("reveal");
+//       return score;
+//     } else if (userInput(e) !== correctAns) {
+//       pokeImg.classList.remove("reveal");
+//       return score;
+//     }
 //   }
-//   findAnswer();
-
-// const userInput = answerArr.addEventListner("click", event => {
-//   console.log(event.target.value);
-// });
-// if (userInput === correctAns) {
-//   userScore += 1;
-//   revealPic;
-//   alert(`You got it! You have ${userScore} now. `);
-// } else if (userInput != correctAns) {
-//   alert("Sorry, that was incorrect");
-//   revealPic;
-// }
-// if (userScore === 8 && 10) {
-//   alert(" You, Win! Go back to the Home Page and Try Again!");
-//   revealPic;
-// } else {
-//   alert("You've lost the game, you're not a Pokemon Master.");
-//   revealPic;
-// }
 // };
-let checkForWinner = () => {
-  let winner = document.querySelectorAll(".duck");
-  if (winner.length === 1) {
-    alert("You've won, there are no more ducks");
+
+const findAnswer = e => {
+  const answerValue = correctAns.innerHTML;
+  questionsAsked += 1;
+  if (e.target.innerHTML === answerValue) {
+    pokeImg.classList.add("reveal");
+    scoreBoard.innerHTML = `${(score += 1)}`;
+  } else {
+    pokeImg.classList.remove("reveal");
   }
 };
