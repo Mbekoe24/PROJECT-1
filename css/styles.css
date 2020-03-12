@@ -153,12 +153,12 @@ footer {
     margin-bottom: 15px;
   }
   .intro-img {
-    width: 100%;
+    width: 350px;
     height: 100px;
     margin-top: 15px;
     margin-right: 50px;
     padding-bottom: 15px;
-    padding-left: 50px;
+    padding-left: 100px;
   }
 
   footer {
@@ -172,20 +172,21 @@ footer {
     margin-bottom: 10px;
   }
   div button {
-    margin-left: 50px;
+    margin-left: 110px;
   }
 
   .rules {
     width: 50%;
     height: 30%;
     padding-bottom: 20px;
-    margin-right: 10px;
+    margin-right: 0px;
+    margin-left: 70px;
   }
 
   .rules-prompt {
     width: 95%;
     height: 100%;
-    margin-left: 30px;
+    margin-left: 70px;
     padding-bottom: 10px;
   }
   .prompt-div {
