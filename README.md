@@ -4,30 +4,29 @@ Title: Poke App: Knowledge Tester
 
 # Project Description:
 
-I will be using get a picture of a Pokemon from api data to display on the screen. I will be using the math.random() / other methods to display that randomize pokemon that will display on the screen. The user will than have 3 answer to choose from that will confirm the pokemon displayed on the screen. If the user get 5 correct answer, he will be crowned the new Pokemon Master. I will include a hamburger/dropmenu where user can access and look at all different pokemon. This menu will include their names and types from a (list: name, type of Pokemon).
+This project is a Pokémon Knowledge Test App. I will be using an image of different Pokemon from api data to display on the screen. To help with conceptualize this idea, I will be using methods like math.random()/ math.floor() and other methods to help display the randomized pokemon that will display on the screen. The user will than have 10 answer questions to identify the pokemon displayed on the screen. The user must get at least 8 answers correct, to be crowned the newest Pokemon Master.
 
 # API:
 
-Pokémon Api (https://pokeapi.co/)
+I will be using the Pokémon Api (https://pokeapi.co/)
 
 # MVP:
 
-Goal : I will have all my data recieved from API implemented into my code.  
-Goal : Finished configuring all my JS logic for my game.  
-Goal : My page layout for Desktop fully set.
-Goal : My media quieries (mobile, and tablets) built / design within code.
-Goal : My website will be up on surge.
+For MVP, I will have all my data recieved from API implemented into my code.
+As, well as all my js logic configured and finished for my game.  
+All of my media queries will be set/ layouts for Desktop, iPhone X, Xmax, and Tablet/ iPads fully set.My last goal is to have my website live up on surge for users to see/ interactive with.
 
 # Post-MVP:
 
-Goal : Will have event listeners built for all buttons on page and options.  
-Goal : To have CSS slide animations into next page/ linear gradient backgrounds/ flex or grid to align picture.
-Goal : Will have a UX student take a look at app.
-Goal : I will find a local storage where I can save data.
-Goal : Reference & credit all links/ img within my code.
-Goal : I will have a favicon inplace
+My plan is to have event listeners built-in for all buttons on page.
+Another thing I will like to include is linear gradient backgrounds; as well as including flex or grid to align my images.
+I will have a UX student take a look at app, to see how I can improve the users experience.
+Although, this is just a project I will reference all my sources that I used for this project specifically for my images.
+I will find a local storage where I can save data.
+In additon, having a favicon in place would bring a more organic website feel so I will try to implent that. Lastly, my goal is to incoperate local
 
 # Wireframe :
 
-![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1583717722/Pokemon-HP-WF_sn8mbr.png)
-![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1583717615/Pokemon-Game-WF_h1k8pm.png)
+![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1584038319/HP_Wirefram_drgq6g.png)
+![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1584038350/Rules_WF_nb1xez.png)
+![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1584038359/Test_WF_ngpo74.png)
