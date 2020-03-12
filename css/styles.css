@@ -38,6 +38,7 @@ body {
   height: 72px;
   padding: 10px 10px;
 }
+/* These images were created with this website https://fontmeme.com/pokemon-font/ */
 .greeting-img {
   width: 270px;
   height: 250px;
@@ -86,8 +87,6 @@ div button:hover {
   font-size: 2em;
   font-family: "Russo One", sans-serif;
 }
-
-/* footer styling //////////////////////////////////*/
 
 footer {
   background-color: #ffcc03;
@@ -209,7 +208,7 @@ footer {
     margin-bottom: 10px;
   }
   footer {
-    width: 99%;
+    width: 98%;
     height: 10px;
   }
 
@@ -250,33 +249,35 @@ footer {
     padding: 10px 10px;
   }
   .intro-img {
-    width: 200px;
-    height: 150px;
-    margin-top: 20px;
-    margin-left: 35%;
-    margin-bottom: 20px;
+    width: 80vw;
+    height: 200px;
+    margin: 0px auto;
+    margin-top: unset;
+    margin-left: 10%;
+    object-fit: contain;
   }
 
   .greeting-img {
     width: 270px;
     height: 250px;
     margin-left: 50px;
-    margin-bottom: 20px;
-  }
-
-  intro-img {
-    height: 120px;
-    margin-top: 0px;
-    margin-left: 20px;
+    margin-bottom: 0px;
   }
 
   .button-div {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
+    margin-left: 35px;
   }
 
   .rules-prompt {
     width: 400px;
     height: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .welcome-img {
+    margin-left: 15%;
   }
 }
