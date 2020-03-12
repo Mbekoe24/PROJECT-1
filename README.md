@@ -28,5 +28,4 @@ In additon, having a favicon in place would bring a more organic website feel so
 # Wireframe :
 
 ![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1584038319/HP_Wirefram_drgq6g.png)
-![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1584038350/Rules_WF_nb1xez.png)
 ![Pokeapp!](https://res.cloudinary.com/dzwjxdnjs/image/upload/v1584038359/Test_WF_ngpo74.png)
